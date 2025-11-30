@@ -1,8 +1,18 @@
 # Ignore virtual environment
 venv/
+
+# Ignore Python cache
 __pycache__/
 *.pyc
+
+# Ignore OS files
 .DS_Store
+Thumbs.db
+
+# Ignore dataset if too large
 dataset/
-Test/
-model/
+
+# Ignore model weights if you want to use Git LFS for big files
+*.h5
+*.pkl
+*.pyd
