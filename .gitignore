@@ -17,6 +17,18 @@ dataset/
 *.pkl
 *.pyd
 
-echo venv/ > .gitignore
-echo *.pyc >> .gitignore
-echo __pycache__/ >> .gitignore
+venv/
+__pycache__/
+*.pyd
+*.dll
+*.so
+*.zip
+*.tar
+*.whl
+model/*.h5
+model/*.tflite
+*.db
+.DS_Store
+*.log
+
+
