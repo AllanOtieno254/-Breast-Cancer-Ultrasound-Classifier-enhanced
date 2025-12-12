@@ -8,6 +8,8 @@ Test dataset
 
 # Breast Cancer Ultrasound Classifier – Project Documentation
 
+<img width="1597" height="726" alt="img1" src="https://github.com/user-attachments/assets/93fb290a-d56c-4e81-b6ab-a629d3617ba9" />
+
 ## 1. Project Overview
 The Breast Cancer Ultrasound Classifier is a web-based application designed to assist medical professionals in the analysis of breast ultrasound images. Leveraging deep learning, Grad-CAM visualization, and large language model (LLM) explanations, this system allows for:
 •  Automated classification of breast ultrasound images into Malignant or Benign categories.  
@@ -37,27 +39,37 @@ ________________________________________
 ### Components:
 
 1. **Frontend/UI (Streamlit)**  
-   o Patient detail form with PSNO, Name, Age, Gender, and clinical notes.  
-   o Image upload (single-image mode) with optional blurriness warnings.  
-   o Display of predictions, probabilities, Grad-CAM overlays, and bar charts.  
-   o PDF report generation for professional clinical use.  
-   o Database management with CSV export and table view.  
+   o Patient detail form with PSNO, Name, Age, Gender, and clinical notes.
+     <img width="1597" height="726" alt="img1" src="https://github.com/user-attachments/assets/8395516b-9ad9-46ca-8458-2c6e43449b2b" />
 
-2. **Backend (Image Classification & Grad-CAM)**  
+   o Image upload (single-image mode) with optional blurriness warnings.  
+   o Display of predictions, probabilities, Grad-CAM overlays, and bar charts.
+    <img width="1594" height="722" alt="img pred" src="https://github.com/user-attachments/assets/c4baa245-377a-4367-b3c8-1db81b802c76" />
+
+   o PDF report generation for professional clinical use.  
+   o Database management with CSV export and table view.
+     <img width="1564" height="726" alt="Dbs" src="https://github.com/user-attachments/assets/1bd7e6f2-8ef9-46ea-898e-0db222e0737f" />
+
+
+3. **Backend (Image Classification & Grad-CAM)**  
    o Preprocessing and normalization of input images.  
    o Classification using Keras deep learning model (keras_model.h5).  
    o Grad-CAM overlay generation for explainable AI.  
    o Confidence-level warnings based on probabilities.  
 
-3. **Database Layer (SQLite)**  
+4. **Database Layer (SQLite)**  
    o Stores patient info, predictions, probabilities, Grad-CAM paths, explanations, and model metadata.  
    o Supports export to CSV for record-keeping and tracking.  
 
-4. **LLM Layer (DeepSeek API)**  
+5. **LLM Layer (DeepSeek API)**  
    o Generates textual explanations of model predictions.  
    o Supports two explanation modes:  
-     ▪ Doctor – medical terminology.  
-     ▪ Patient – plain language “Explain Like I’m 5”.  
+     ▪ Doctor – medical terminology.
+   ![Uploading doc expl.png…]()
+
+     ▪ Patient – plain language “Explain Like I’m 5”.
+   ![Uploading patient expl.png…]()
+
 
 ### Data Flow:
 Patient Info → Image Upload → Preprocessing → Model Prediction → Grad-CAM → LLM Explanation → DB Storage → Display & PDF Export
