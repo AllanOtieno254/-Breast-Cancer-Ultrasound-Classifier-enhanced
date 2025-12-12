@@ -65,10 +65,15 @@ ________________________________________
    o Generates textual explanations of model predictions.  
    o Supports two explanation modes:  
      ▪ Doctor – medical terminology.
-   ![Uploading doc expl.png…]()
+
+      <img width="1597" height="733" alt="doc expl" src="https://github.com/user-attachments/assets/06aca841-9571-43de-bc38-bbc0562d7584" />
+
+  
 
      ▪ Patient – plain language “Explain Like I’m 5”.
-   ![Uploading patient expl.png…]()
+
+      <img width="1595" height="727" alt="patient expl" src="https://github.com/user-attachments/assets/1b4a5bb5-44a4-4e4e-9a14-2c3d647fb478" />
+
 
 
 ### Data Flow:
