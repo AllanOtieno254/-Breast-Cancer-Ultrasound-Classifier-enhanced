@@ -12,23 +12,20 @@ Thumbs.db
 # Ignore dataset if too large
 dataset/
 
-# Ignore model weights if you want to use Git LFS for big files
+# Ignore model weights and large files
+model/*.h5
+model/*.tflite
+
 *.h5
 *.pkl
-*.pyd
-
-venv/
-__pycache__/
 *.pyd
 *.dll
 *.so
 *.zip
 *.tar
 *.whl
-model/*.h5
-model/*.tflite
 *.db
-.DS_Store
 *.log
 
+# Ignore environment variables
 .env
