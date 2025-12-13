@@ -3,3 +3,12 @@ streamlit
 pillow
 keras
 tensorflow-cpu
+streamlit
+tensorflow
+opencv-python-headless
+Pillow
+numpy
+matplotlib
+requests
+pandas
+python-dotenv
