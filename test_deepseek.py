@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 KEY = os.getenv("DEEPSEEK_API_KEY")
-BASE = "https://api.deepseek.com/v1"
+BASE = "DEEPSEEK URL LINK GOES HERE"
 
 headers = {
     "Authorization": f"Bearer {KEY}",
