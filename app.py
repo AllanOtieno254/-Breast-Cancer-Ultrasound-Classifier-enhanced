@@ -25,7 +25,7 @@ load_dotenv()
 
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
-DEEPSEEK_BASE = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+DEEPSEEK_BASE = os.getenv("DEEPSEEK_BASE_URL", "https.........")
 
 st.set_page_config(page_title="Breast Cancer Classifier", layout="wide")
 
